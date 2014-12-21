@@ -1,0 +1,10 @@
+<productList>
+    <product id="1">
+        <name>Paine neagra</name>
+        <type>100g</type>
+        <proteins>8.1</proteins>
+        <fats>1</fats>
+        <carbs>51</carbs>
+        <fibers>5</fibers>
+    </product>
+</productList>
