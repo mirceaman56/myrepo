@@ -5,6 +5,7 @@ package com.mmco.parser;
  */
 public class ParserUtils {
 
+    private static final String INPUT_FILE_NAME = "products.xml";
     private static final String PRODUCT_LIST = "productList";
     private static final String PRODUCT_NAME = "name";
     private static final String PRODUCT_TYPE = "type";
