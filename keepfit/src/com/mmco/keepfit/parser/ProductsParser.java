@@ -1,7 +1,6 @@
-package com.mmco.parser;
+package com.mmco.keepfit.parser;
 
 import org.xml.sax.SAXException;
-import org.xml.sax.helpers.DefaultHandler;
 
 import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.parsers.SAXParser;
