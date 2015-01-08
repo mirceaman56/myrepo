@@ -14,9 +14,9 @@ public class MenuUtils {
         return new JMenuBar();
     }
 
-    public JMenu createMenuWithSubmenus(String menuName, List<String> subMenuList) {
+    public JMenu createMenuWithSubmenus(String menuName, String... subMenus) {
         JMenu menu = new JMenu(menuName);
-        for (String subMenu : subMenuList) {
+        for (String subMenu : subMenus) {
             menu.add(new JMenuItem(subMenu));
         }
         return menu;
@@ -30,5 +30,10 @@ public class MenuUtils {
             menu.add(menuItem);
         }
         return menu;
+    }
+
+
+    public enum MenuNames {
+        FILE, EDIT, ABOUT, NEW, RESET;
     }
 }
