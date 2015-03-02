@@ -3,9 +3,9 @@ apply plugin: 'com.android.application'
 android {
     signingConfigs {
         config {
-            keyAlias 'Mavid'
+            keyAlias 'awesome'
             keyPassword 'fuckoff90'
-            storeFile file('C:/Users/Horatiu/Desktop/ya.jpg')
+            storeFile file('D:/myrepo/Awesome/keystore.jks')
             storePassword 'fuckoff90'
         }
     }
@@ -17,6 +17,7 @@ android {
         targetSdkVersion 21
         versionCode 1
         versionName "1.0"
+        signingConfig signingConfigs.config
     }
     buildTypes {
         release {
@@ -28,10 +29,12 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_7
         targetCompatibility JavaVersion.VERSION_1_7
     }
+    productFlavors {
+    }
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile fileTree(include: ['*.jar'], dir: 'libs')
     compile 'com.android.support:appcompat-v7:21.0.3'
     compile 'com.google.android.gms:play-services:6.+'
 }
